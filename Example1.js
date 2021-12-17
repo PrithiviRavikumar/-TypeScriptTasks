@@ -1,5 +1,5 @@
-var Product = /** @class */ (function () {
-    function Product(customerno, cname, clocation) {
+var Customer = /** @class */ (function () {
+    function Customer(customerno, cname, clocation) {
         if (customerno === void 0) { customerno = 0; }
         if (cname === void 0) { cname = ""; }
         if (clocation === void 0) { clocation = ""; }
@@ -10,14 +10,14 @@ var Product = /** @class */ (function () {
         this.cname = cname;
         this.clocation = clocation;
     }
-    Product.prototype.showDetails = function () {
+    Customer.prototype.showDetails = function () {
         console.log("Customer Details  ::   Id : ".concat(this.customerno, ", Name : ").concat(this.cname, ", City : ").concat(this.clocation));
     };
-    return Product;
+    return Customer;
 }());
-var p1 = new Product();
-var p2 = new Product(10256);
-var p3 = new Product(10256, "Sam");
-p1.showDetails();
-p2.showDetails();
-p3.showDetails();
+var Customerobj1 = new Customer();
+var Customerobj2 = new Customer(10256, "Scott");
+var Customerobj3 = new Customer(10256, "Scott", "Hyd");
+Customerobj1.showDetails();
+Customerobj2.showDetails();
+Customerobj3.showDetails();

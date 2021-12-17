@@ -1,4 +1,4 @@
-class Product 
+class Customer 
 {
     public customerno:number = 0;
     public cname:string  = "";
@@ -20,10 +20,10 @@ class Product
 }
 
 
-let p1:Product = new Product();
-let p2:Product = new Product(10256);
-let p3:Product = new Product(10256, "Sam");
+let Customerobj1:Customer = new Customer();
+let Customerobj2:Customer = new Customer(10256,"Scott");
+let Customerobj3:Customer = new Customer(10256, "Scott","Hyd");
  
-p1.showDetails();
-p2.showDetails();
-p3.showDetails();
+Customerobj1.showDetails();
+Customerobj2.showDetails();
+Customerobj3.showDetails();
